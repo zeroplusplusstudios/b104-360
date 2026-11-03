@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14100d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="B-104, 4 BHK: 360-degree views to look around and walk through, also in a phone VR box. Illustrative 3D visualisation.">
+<title>B-104 · 360° views</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="card/card.css">
+<link rel="stylesheet" href="vr.css">
+<link rel="modulepreload" href="vendor/three/three.module.min.js">
+</head>
+<body>
+<canvas id="view" aria-label="360-degree view"></canvas>
+<div id="loadbar" aria-hidden="true"><i></i></div>
+<div id="fade" aria-hidden="true"></div>
+<div id="ui" hidden>
+  <div id="where">
+    <button id="b-rooms" class="btn" aria-haspopup="true" aria-controls="menu"><span class="ico" aria-hidden="true">☰</span><span>Rooms</span></button>
+    <div id="chip"><span id="chip-t"></span><span id="badge" hidden>Stand-in test picture</span></div>
+  </div>
+  <div id="cardbox" class="folded">
+    <button id="b-fold" class="btn small" aria-expanded="false" aria-controls="cardhost">Map</button>
+    <div id="cardhost"></div>
+  </div>
+  <div id="bottom">
+    <div id="hint"></div>
+    <div id="bar">
+      <button id="b-motion" class="btn" hidden aria-pressed="false">Motion: off</button>
+      <button id="b-centre" class="btn">Re-centre</button>
+      <button id="b-vr" class="btn">VR box</button>
+      <button id="b-xr" class="btn" hidden>Headset</button>
+      <button id="b-full" class="btn" hidden>Full screen</button>
+    </div>
+  </div>
+</div>
+<nav id="menu" hidden aria-label="Rooms">
+  <div class="mhead"><span class="eyebrow">B-104 · 4 BHK</span><button id="b-menu-x" class="btn small" aria-label="Close">Close</button></div>
+  <ol id="mlist"></ol>
+  <p class="mfine">Illustrative 3D visualisation; furniture and finishes are indicative.</p>
+</nav>
+<div id="vr" hidden>
+  <div class="eye" id="eye0"><div class="plate"></div><div class="emsg"></div></div>
+  <div class="eye" id="eye1"><div class="plate"></div><div class="emsg"></div></div>
+  <div id="vrbar">
+    <button id="b-vr-x" class="btn small">✕ Exit</button>
+    <button id="b-vr-c" class="btn small">Re-centre</button>
+    <button id="b-vr-s" class="btn small" aria-expanded="false" aria-controls="vrset">Settings</button>
+  </div>
+  <form id="vrset" hidden onsubmit="return false">
+    <label>Zoom (field of view per eye) <output id="o-fov"></output><input id="s-fov" type="range" min="70" max="115" step="1"></label>
+    <label>Eye gap (lens distance) <output id="o-gap"></output><input id="s-gap" type="range" min="50" max="75" step="0.5"></label>
+    <label>Lens correction <output id="o-lens"></output><input id="s-lens" type="range" min="0" max="0.5" step="0.05"></label>
+    <label>Look time to walk <output id="o-dwell"></output><input id="s-dwell" type="range" min="0.8" max="3" step="0.1"></label>
+    <div class="row"><button id="b-set-reset" class="btn small" type="button">Defaults</button><button id="b-set-ok" class="btn small accent" type="button">Done</button></div>
+  </form>
+  <div id="turn">Turn the phone sideways<br><small>then put it in the box</small></div>
+</div>
+<div id="start">
+  <div class="sbox">
+    <div class="eyebrow">B-104 · 4 BHK</div>
+    <h1>360° views</h1>
+    <p>Stand at points around the flat and look in every direction. Rings on the floor take you to the next room.</p>
+    <div class="sbtns">
+      <button id="b-look" class="big accent" disabled>Look around</button>
+      <button id="b-box" class="big" disabled>VR box</button>
+    </div>
+    <button id="b-head" class="btn" hidden>Headset (WebXR)</button>
+    <p id="status" role="status">Loading…</p>
+    <p class="fine">Illustrative 3D visualisation; furniture and finishes are indicative.</p>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="color:#fff;padding:24px">This page needs JavaScript.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

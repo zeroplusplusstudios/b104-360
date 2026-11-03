@@ -1,0 +1,938 @@
+{
+ "faces": {
+  "slots": [
+   "px",
+   "nx",
+   "py",
+   "ny",
+   "pz",
+   "nz"
+  ],
+  "levels": [
+   "lo",
+   "hi"
+  ],
+  "sizes": {
+   "lo": 1024,
+   "hi": 2048
+  }
+ },
+ "pano_dirs": [
+  "pano"
+ ],
+ "start": "out",
+ "points": [
+  {
+   "id": "out",
+   "room": null,
+   "title": "Garden",
+   "line": "Outside, north of Block B",
+   "label": "Garden, north of Block B (B-104 is the first-floor terrace)",
+   "pano": "pano",
+   "pos": [
+    0.05,
+    1.67,
+    0.0
+   ],
+   "dir0": [
+    -0.6767,
+    0.2369,
+    0.6972
+   ],
+   "links": [
+    {
+     "to": "foyer",
+     "kind": "floor",
+     "spot": [
+      -1.343,
+      0.07,
+      1.435
+     ],
+     "via": "lift"
+    }
+   ]
+  },
+  {
+   "id": "foyer",
+   "room": "foyer",
+   "title": "P. Foyer",
+   "line": "9'7\" × 17'4\" · 2.92 × 5.28 m",
+   "label": "P. Foyer, at the main door",
+   "pano": "pano",
+   "pos": [
+    -12.07,
+    4.958,
+    16.69
+   ],
+   "dir0": [
+    0.9992,
+    0.0,
+    -0.0396
+   ],
+   "links": [
+    {
+     "to": "vest",
+     "kind": "floor",
+     "spot": [
+      -10.823,
+      3.358,
+      16.601
+     ]
+    },
+    {
+     "to": "out",
+     "kind": "door",
+     "spot": [
+      -11.361,
+      4.658,
+      18.993
+     ],
+     "via": "lift"
+    }
+   ]
+  },
+  {
+   "id": "vest",
+   "room": "vest",
+   "title": "Vestibule",
+   "line": "7'0\" × 5'6\" · 2.13 × 1.68 m",
+   "label": "Vestibule, inside the main door",
+   "pano": "pano",
+   "pos": [
+    -9.83,
+    4.958,
+    16.53
+   ],
+   "dir0": [
+    0.057,
+    0.0,
+    -0.9984
+   ],
+   "links": [
+    {
+     "to": "foyer",
+     "kind": "floor",
+     "spot": [
+      -11.077,
+      3.358,
+      16.619
+     ]
+    },
+    {
+     "to": "living_s",
+     "kind": "floor",
+     "spot": [
+      -9.645,
+      3.358,
+      15.344
+     ]
+    },
+    {
+     "to": "t0",
+     "kind": "floor",
+     "spot": [
+      -10.696,
+      3.358,
+      15.419
+     ]
+    }
+   ]
+  },
+  {
+   "id": "living_s",
+   "room": "living",
+   "title": "Living",
+   "line": "11'0\" × 19'11\" · 3.35 × 6.07 m",
+   "label": "Living, the entrance end",
+   "pano": "pano",
+   "pos": [
+    -9.59,
+    4.958,
+    14.99
+   ],
+   "dir0": [
+    -0.2523,
+    0.0,
+    -0.9676
+   ],
+   "links": [
+    {
+     "to": "dining",
+     "kind": "floor",
+     "spot": [
+      -7.752,
+      3.358,
+      14.338
+     ]
+    },
+    {
+     "to": "living_n",
+     "kind": "floor",
+     "spot": [
+      -8.537,
+      3.358,
+      13.342
+     ]
+    },
+    {
+     "to": "t0",
+     "kind": "floor",
+     "spot": [
+      -10.777,
+      3.358,
+      14.814
+     ]
+    },
+    {
+     "to": "vest",
+     "kind": "floor",
+     "spot": [
+      -9.775,
+      3.358,
+      16.176
+     ]
+    }
+   ]
+  },
+  {
+   "id": "living_n",
+   "room": "living",
+   "title": "Living",
+   "line": "11'0\" × 19'11\" · 3.35 × 6.07 m",
+   "label": "Living, between the sofa and the dining table",
+   "pano": "pano",
+   "pos": [
+    -7.93,
+    4.958,
+    11.89
+   ],
+   "dir0": [
+    -0.9969,
+    0.0,
+    0.0784
+   ],
+   "links": [
+    {
+     "to": "balcony",
+     "kind": "door",
+     "spot": [
+      -7.624,
+      4.358,
+      9.429
+     ]
+    },
+    {
+     "to": "dining",
+     "kind": "floor",
+     "spot": [
+      -6.99,
+      3.358,
+      12.928
+     ]
+    },
+    {
+     "to": "living_s",
+     "kind": "floor",
+     "spot": [
+      -8.851,
+      3.358,
+      13.609
+     ]
+    }
+   ]
+  },
+  {
+   "id": "balcony",
+   "room": "balcony",
+   "title": "Balcony",
+   "line": "14'3\" × 7'0\" + 14'3\" × 2'0\" · 4.34 × 2.13 m + 4.34 × 0.61 m",
+   "label": "Living balcony (the terrace off the living and dining)",
+   "pano": "pano",
+   "pos": [
+    -7.53,
+    4.954,
+    8.67
+   ],
+   "dir0": [
+    -0.2168,
+    0.0,
+    -0.9762
+   ],
+   "links": [
+    {
+     "to": "living_n",
+     "kind": "floor",
+     "spot": [
+      -7.683,
+      3.354,
+      11.12
+     ]
+    },
+    {
+     "to": "terrace",
+     "kind": "floor",
+     "spot": [
+      -9.929,
+      3.354,
+      8.838
+     ]
+    }
+   ]
+  },
+  {
+   "id": "terrace",
+   "room": "sb1",
+   "title": "Terrace",
+   "line": "13'8\" × 1'8\" · 4.17 × 0.51 m + deck 7.5 m²",
+   "label": "Terrace off the bedroom by the living",
+   "pano": "pano",
+   "pos": [
+    -12.79,
+    4.954,
+    8.71
+   ],
+   "dir0": [
+    -0.145,
+    0.0,
+    -0.9894
+   ],
+   "links": [
+    {
+     "to": "balcony",
+     "kind": "floor",
+     "spot": [
+      -10.59,
+      3.354,
+      8.693
+     ]
+    },
+    {
+     "to": "bed1",
+     "kind": "floor",
+     "spot": [
+      -12.402,
+      3.354,
+      10.416
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dining",
+   "room": "kitchen",
+   "title": "Dining",
+   "line": "12'0\" × 30'11\" · 3.66 × 9.42 m",
+   "label": "Dining",
+   "pano": "pano",
+   "pos": [
+    -6.21,
+    4.958,
+    13.79
+   ],
+   "dir0": [
+    0.0023,
+    0.0,
+    -1.0
+   ],
+   "links": [
+    {
+     "to": "kitchen",
+     "kind": "floor",
+     "spot": [
+      -6.101,
+      3.358,
+      15.587
+     ]
+    },
+    {
+     "to": "living_n",
+     "kind": "floor",
+     "spot": [
+      -7.15,
+      3.358,
+      12.752
+     ]
+    },
+    {
+     "to": "living_s",
+     "kind": "floor",
+     "spot": [
+      -8.048,
+      3.358,
+      14.442
+     ]
+    },
+    {
+     "to": "lobby",
+     "kind": "floor",
+     "spot": [
+      -4.534,
+      3.358,
+      14.075
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kitchen",
+   "room": "kitchen",
+   "title": "Kitchen",
+   "line": "12'0\" × 30'11\" · 3.66 × 9.42 m",
+   "label": "Kitchen",
+   "pano": "pano",
+   "pos": [
+    -6.01,
+    4.958,
+    17.09
+   ],
+   "dir0": [
+    0.7071,
+    0.0,
+    0.7071
+   ],
+   "links": [
+    {
+     "to": "dining",
+     "kind": "floor",
+     "spot": [
+      -6.119,
+      3.358,
+      15.293
+     ]
+    },
+    {
+     "to": "wash",
+     "kind": "floor",
+     "spot": [
+      -7.122,
+      3.358,
+      17.78
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wash",
+   "room": "wash",
+   "title": "Wash Yard",
+   "line": "4'11\" × 8'1\" · 1.50 × 2.46 m",
+   "label": "Wash yard (the service passage beyond)",
+   "pano": "pano",
+   "pos": [
+    -8.13,
+    4.954,
+    18.09
+   ],
+   "dir0": [
+    0.0124,
+    0.0,
+    0.9999
+   ],
+   "links": [
+    {
+     "to": "kitchen",
+     "kind": "floor",
+     "spot": [
+      -6.954,
+      3.354,
+      17.535
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lobby",
+   "room": "lobby",
+   "title": "Bedroom Passage",
+   "line": "",
+   "label": "Bedroom passage",
+   "pano": "pano",
+   "pos": [
+    -3.15,
+    4.958,
+    14.31
+   ],
+   "dir0": [
+    0.9905,
+    0.0,
+    -0.1377
+   ],
+   "links": [
+    {
+     "to": "bed2_a",
+     "kind": "floor",
+     "spot": [
+      -2.428,
+      3.358,
+      15.28
+     ]
+    },
+    {
+     "to": "bed3_a",
+     "kind": "floor",
+     "spot": [
+      -1.943,
+      3.358,
+      14.238
+     ]
+    },
+    {
+     "to": "dining",
+     "kind": "floor",
+     "spot": [
+      -4.826,
+      3.358,
+      14.025
+     ]
+    },
+    {
+     "to": "master_a",
+     "kind": "floor",
+     "spot": [
+      -3.059,
+      3.358,
+      11.912
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bed1",
+   "room": "bed1",
+   "title": "Bedroom (off the living)",
+   "line": "13'0\" × 11'0\" · 3.96 × 3.35 m",
+   "label": "Bedroom off the living",
+   "pano": "pano",
+   "pos": [
+    -12.09,
+    4.958,
+    11.79
+   ],
+   "dir0": [
+    -0.999,
+    0.0,
+    0.0438
+   ],
+   "links": [
+    {
+     "to": "t0",
+     "kind": "floor",
+     "spot": [
+      -11.829,
+      3.358,
+      13.369
+     ]
+    },
+    {
+     "to": "terrace",
+     "kind": "floor",
+     "spot": [
+      -12.624,
+      3.358,
+      10.117
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t0",
+   "room": "t0",
+   "title": "Toilet (common)",
+   "line": "5'0\" × 6'8\" · 1.52 × 2.03 m",
+   "label": "Common toilet, from its door in the alcove off the living",
+   "pano": "pano",
+   "pos": [
+    -11.61,
+    4.954,
+    14.69
+   ],
+   "dir0": [
+    -0.9989,
+    0.0,
+    -0.0476
+   ],
+   "links": [
+    {
+     "to": "bed1",
+     "kind": "floor",
+     "spot": [
+      -11.871,
+      3.354,
+      13.111
+     ]
+    },
+    {
+     "to": "living_s",
+     "kind": "floor",
+     "spot": [
+      -10.423,
+      3.354,
+      14.866
+     ]
+    },
+    {
+     "to": "vest",
+     "kind": "floor",
+     "spot": [
+      -10.529,
+      3.354,
+      15.592
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bed3_a",
+   "room": "bed3",
+   "title": "Bedroom (middle)",
+   "line": "16'11\" × 10'7\" · 5.16 × 3.23 m",
+   "label": "Middle bedroom, by the door",
+   "pano": "pano",
+   "pos": [
+    -1.11,
+    4.958,
+    13.93
+   ],
+   "dir0": [
+    -0.8085,
+    0.0,
+    -0.5885
+   ],
+   "links": [
+    {
+     "to": "bed3_b",
+     "kind": "floor",
+     "spot": [
+      0.44,
+      3.358,
+      13.365
+     ]
+    },
+    {
+     "to": "lobby",
+     "kind": "floor",
+     "spot": [
+      -2.262,
+      3.358,
+      14.297
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bed3_b",
+   "room": "bed3",
+   "title": "Bedroom (middle)",
+   "line": "16'11\" × 10'7\" · 5.16 × 3.23 m",
+   "label": "Middle bedroom, by the window",
+   "pano": "pano",
+   "pos": [
+    1.69,
+    4.958,
+    12.91
+   ],
+   "dir0": [
+    -0.9943,
+    0.0,
+    -0.1067
+   ],
+   "links": [
+    {
+     "to": "bed3_a",
+     "kind": "floor",
+     "spot": [
+      0.14,
+      3.358,
+      13.475
+     ]
+    },
+    {
+     "to": "t2",
+     "kind": "floor",
+     "spot": [
+      2.265,
+      3.358,
+      14.25
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "room": "t2",
+   "title": "Toilet (middle bedroom)",
+   "line": "5'11\" × 8'0\" · 1.80 × 2.44 m",
+   "label": "Toilet of the middle bedroom",
+   "pano": "pano",
+   "pos": [
+    2.47,
+    4.954,
+    15.41
+   ],
+   "dir0": [
+    0.6009,
+    0.0,
+    0.7993
+   ],
+   "links": [
+    {
+     "to": "bed3_b",
+     "kind": "floor",
+     "spot": [
+      2.038,
+      3.354,
+      14.026
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bed2_a",
+   "room": "bed2",
+   "title": "Bedroom (corner)",
+   "line": "12'0\" × 17'5\" · 3.66 × 5.31 m",
+   "label": "Corner bedroom, at its entrance",
+   "pano": "pano",
+   "pos": [
+    -1.77,
+    4.958,
+    15.75
+   ],
+   "dir0": [
+    0.9154,
+    0.0,
+    0.4025
+   ],
+   "links": [
+    {
+     "to": "bed2_b",
+     "kind": "floor",
+     "spot": [
+      0.193,
+      3.358,
+      16.676
+     ]
+    },
+    {
+     "to": "lobby",
+     "kind": "floor",
+     "spot": [
+      -2.842,
+      3.358,
+      14.631
+     ]
+    },
+    {
+     "to": "t1",
+     "kind": "floor",
+     "spot": [
+      -2.301,
+      3.358,
+      16.826
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bed2_b",
+   "room": "bed2",
+   "title": "Bedroom (corner)",
+   "line": "12'0\" × 17'5\" · 3.66 × 5.31 m",
+   "label": "Corner bedroom, by the slider",
+   "pano": "pano",
+   "pos": [
+    1.53,
+    4.958,
+    17.91
+   ],
+   "dir0": [
+    -0.9984,
+    0.0,
+    0.057
+   ],
+   "links": [
+    {
+     "to": "bed2_a",
+     "kind": "floor",
+     "spot": [
+      -0.146,
+      3.358,
+      16.454
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t1",
+   "room": "t1",
+   "title": "Toilet (corner bedroom)",
+   "line": "6'0\" × 12'8\" · 1.83 × 3.86 m",
+   "label": "Toilet of the corner bedroom",
+   "pano": "pano",
+   "pos": [
+    -2.59,
+    4.954,
+    17.41
+   ],
+   "dir0": [
+    -0.2358,
+    0.0,
+    0.9718
+   ],
+   "links": [
+    {
+     "to": "bed2_a",
+     "kind": "floor",
+     "spot": [
+      -2.193,
+      3.354,
+      16.268
+     ]
+    }
+   ]
+  },
+  {
+   "id": "master_a",
+   "room": "master",
+   "title": "M. Bedroom",
+   "line": "18'0\" × 12'0\" · 5.49 × 3.66 m",
+   "label": "Master bedroom, by the wardrobes",
+   "pano": "pano",
+   "pos": [
+    -2.97,
+    4.958,
+    9.59
+   ],
+   "dir0": [
+    0.9735,
+    0.0,
+    0.2288
+   ],
+   "links": [
+    {
+     "to": "lobby",
+     "kind": "floor",
+     "spot": [
+      -3.061,
+      3.358,
+      11.988
+     ]
+    },
+    {
+     "to": "master_b",
+     "kind": "floor",
+     "spot": [
+      -1.227,
+      3.358,
+      8.818
+     ]
+    }
+   ]
+  },
+  {
+   "id": "master_b",
+   "room": "master",
+   "title": "M. Bedroom",
+   "line": "18'0\" × 12'0\" · 5.49 × 3.66 m",
+   "label": "Master bedroom, by the balcony and the toilet door",
+   "pano": "pano",
+   "pos": [
+    0.33,
+    4.958,
+    8.43
+   ],
+   "dir0": [
+    -0.6477,
+    0.0,
+    0.7619
+   ],
+   "links": [
+    {
+     "to": "master_a",
+     "kind": "floor",
+     "spot": [
+      -1.512,
+      3.358,
+      8.919
+     ]
+    },
+    {
+     "to": "mbal",
+     "kind": "floor",
+     "spot": [
+      0.386,
+      3.358,
+      7.231
+     ]
+    },
+    {
+     "to": "tm",
+     "kind": "floor",
+     "spot": [
+      1.516,
+      3.358,
+      8.615
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tm",
+   "room": "tm",
+   "title": "Toilet (master)",
+   "line": "6'3\" × 12'0\" · 1.91 × 3.66 m",
+   "label": "Master toilet",
+   "pano": "pano",
+   "pos": [
+    1.61,
+    4.954,
+    8.63
+   ],
+   "dir0": [
+    0.6791,
+    0.0,
+    0.734
+   ],
+   "links": [
+    {
+     "to": "master_b",
+     "kind": "floor",
+     "spot": [
+      0.424,
+      3.354,
+      8.445
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mbal",
+   "room": "bal",
+   "title": "Balcony (master)",
+   "line": "5'4\" × 3'3\" + 5'4\" × 2'0\" · 1.63 × 0.99 m + 1.63 × 0.61 m",
+   "label": "Master bedroom's balcony",
+   "pano": "pano",
+   "pos": [
+    0.41,
+    4.954,
+    6.71
+   ],
+   "dir0": [
+    -0.1293,
+    0.0,
+    -0.9916
+   ],
+   "links": [
+    {
+     "to": "master_b",
+     "kind": "floor",
+     "spot": [
+      0.354,
+      3.354,
+      7.909
+     ]
+    }
+   ]
+  }
+ ]
+}
