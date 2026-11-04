@@ -14,4 +14,5 @@ Open https://zeroplusplusstudios.github.io/b104-360/ in Chrome, Edge, Safari or 
 - Laptop: click **Look around**, drag to look, click a ring to walk.
 
 The pictures and the viewer code are not licensed for reuse: all rights reserved. It includes three.js (MIT licence,
-`vendor/three/LICENSE`) and the Barlow fonts (SIL Open Font License, `card/fonts/OFL.txt`), under their own licences.
+`vendor/three/LICENSE`), the meshoptimizer decoder (MIT licence, `vendor/meshopt/LICENSE`) and the Barlow fonts (SIL Open
+Font License, `card/fonts/OFL.txt`), under their own licences.
