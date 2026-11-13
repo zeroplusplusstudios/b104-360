@@ -2698,6 +2698,15 @@
      ]
     },
     {
+     "to": "vest",
+     "kind": "floor",
+     "spot": [
+      -10.823,
+      3.358,
+      16.601
+     ]
+    },
+    {
      "to": "out",
      "kind": "door",
      "spot": [
@@ -2739,6 +2748,15 @@
    ],
    "eye_h": 1.6,
    "links": [
+    {
+     "to": "foyer",
+     "kind": "floor",
+     "spot": [
+      -11.077,
+      3.358,
+      16.619
+     ]
+    },
     {
      "to": "living_07",
      "kind": "floor",
